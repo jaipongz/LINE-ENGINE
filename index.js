@@ -177,8 +177,10 @@ async function downloadcontent(mid, downloadpath) {
 }
 
 app.get('/', (req, res) => {
-    res.send('ok');
-})
+  const ip = req.connection.remoteAddress;
+  console.log("Client IP Address:", ip);
+  res.send('IP Address is logged');
+});
 
 
 
