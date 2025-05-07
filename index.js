@@ -14,10 +14,8 @@ const Tesseract = require('tesseract.js')
 app.use(express.static(path.join(__dirname,'download')));
 
 const config = {
-    //channelAccessToken: process.env.token,
-    //channelSecret: process.env.secretcode
-    channelAccessToken: '6kJxNO7B7TQlM9nm0U8QkFf8DbLWNrVYc4Oim6+hvG5JFBv10z9zU/KS2L9HBjqgMbM1R6283XFb3A2/gX41Sy8kFIRz7DBGwwrWC27CT3YCSnJFUHtjd2jeoAhHm7kKVZvZ+Ps/c/TCV/cXfqnCjwdB04t89/1O/w1cDnyilFU=',
-    channelSecret: 'daa80048188d6fedbba86d663fd1970c'
+    channelAccessToken: process.env.token,
+    channelSecret: process.env.secretcode
 }
 
 
